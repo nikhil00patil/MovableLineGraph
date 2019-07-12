@@ -26,18 +26,6 @@ public class MainActivity extends AppCompatActivity {
         mToolTipView = findViewById(R.id.rl_tooltip);
         initializeGraph();
         lContainer.addView(mGraphView);
-
-        //Remove this if don't want to print points or you can modify to get points
-        findViewById(R.id.print).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ArrayList<Point> list = mGraphView.printPositions();
-                for (int i = 0; i < list.size(); i++) {
-                    //Log.i("point " + i, "X: " + list.get(i).x + "  Y:" + Math.abs(list.get(i).y - (mHorizontalList.size() + 1)));
-                    Log.e("point " + i, "Hrs: " + mVerticalList.get(list.get(i).x - 1) + "  temperature:" + mHorizontalList.get(list.get(i).y - 1));
-                }
-            }
-        });
     }
 
     //Initialize the points with your data (now using temp data)

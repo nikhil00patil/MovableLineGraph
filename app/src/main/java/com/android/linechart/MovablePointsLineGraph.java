@@ -249,7 +249,8 @@ public class MovablePointsLineGraph extends View {
         }
     }
 
-    public ArrayList<Point> printPositions() {
+    //You can receive the graph points from this method
+    public ArrayList<Point> getGraphPoint() {
         ArrayList<Point> list = new ArrayList<>();
         for (int i = 0; i < mArrayRect.size(); i++) {
             Point lPoint = new Point(Math.abs(mArrayRect.get(i).centerX() / mCellWidth), Math.abs(((mArrayRect.get(i).centerY() - (mImageHeight / 2)) / mCellHeight)));

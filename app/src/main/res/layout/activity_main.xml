@@ -11,16 +11,10 @@
         android:id="@+id/graph_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="16dp" />
+        android:layout_marginStart="16dp" />
 
-    <Button
-        android:id="@+id/print"
+    <include
+        layout="@layout/layout_tooltip"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:text="print" />
-    <include android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        layout="@layout/layout_tooltip"/>
+        android:layout_height="wrap_content" />
 </RelativeLayout>
