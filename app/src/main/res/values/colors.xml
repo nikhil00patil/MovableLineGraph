@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="background">#ffffff</color>
+    <color name="dotted_dark_line_color">#77f24e63</color>
+    <color name="dotted_light_line_color">#77999999</color>
+    <color name="point_connecting_line_color">#eb001e</color>
+    <color name="text_color">#000000</color>
+    <color name="point_touch_color">#55eb001e</color>
+    <color name="tooltip_text_color">#ffffff</color>
+
+</resources>

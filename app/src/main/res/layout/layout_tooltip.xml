@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_tooltip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tooltip_background"
+    android:gravity="center"
+    android:padding="8dp"
+    android:visibility="gone"
+    tools:context="com.android.linechart.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_xAxis"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/xaxis"
+        android:padding="5dp"
+        android:src="@android:drawable/ic_dialog_info" />
+
+    <TextView
+        android:id="@+id/tv_xAxis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/iv_xAxis"
+        android:textColor="@color/tooltip_text_color"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_yAxis"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/tv_xAxis"
+        android:contentDescription="@string/yaxis"
+        android:padding="5dp"
+        android:src="@android:drawable/ic_dialog_info" />
+
+    <TextView
+        android:id="@+id/tv_yAxis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/iv_yAxis"
+        android:textColor="@color/tooltip_text_color"
+        android:textSize="12sp" />
+
+</RelativeLayout>
